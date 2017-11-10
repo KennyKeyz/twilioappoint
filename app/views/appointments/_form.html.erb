@@ -24,7 +24,7 @@
   <div class="field">
     <%= form.label :time %>
     <div> 
-           <%= time_select :appointment, :time, {:default => {:hour => '15', :minute => '35'}} %>
+           <%= time_select :appointment, :time, {:default => {:hour => '00', :minute => '00'}} %>
     </div>
     
 
@@ -32,7 +32,7 @@
          <%= date_select :appointment, :time, :default=> Date.today %>
     </div>
     <div >
-      <%= form.time_zone_select :time_zone, ActiveSupport::TimeZone.all.sort, default: "Pacific Time (US & Canada)" %>
+      <%= form.time_zone_select :time_zone, ActiveSupport::TimeZone.all.sort, default: "London" %>
     </div>
     
 
